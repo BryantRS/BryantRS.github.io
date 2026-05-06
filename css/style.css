@@ -1,0 +1,21 @@
+        .germania-one-regular {
+            font-family: "Germania One", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Germania One';
+            background-color: #0A2463;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        section {
+            width: 80%;
+            margin: auto;
+            border: 2px solid black;
+            padding: 10px;
+        }
