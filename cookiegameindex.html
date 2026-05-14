@@ -4,23 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cookie CLicker</title>
+    <title>Sandler CLicker</title>
     <link rel="stylesheet" href="css/style.css">
 
     <style>
-        #cookie {
+        #cookie,#cookieclick {
             position: absolute;
             left: 40%;
             top: 10%
         }
+       body {
+  background-image: url('celebrity-png-adam-sandler-8.png');
+}
+
     </style>
 </head>
 
 <body>
-    <img src="201401151610-me1711-games_cookie.png" alt="Cookie" width="400" id="cookie" onclick="cookieClick()">
+    <h1>Sandler Clicker</h1>
+    <img src="OIP-removebg-preview.png" alt="Cookie" width="400" id="cookie" id="cookieclick" onclick="cookieClick()">
     <div id="score">0</div>
-    <button id="autoButton" onclick="autoClickUpgrade()">Upgrade Autoclick (100 clicks)</button>
-    <button id="multiButton" onclick="clickMultiUpgrade()">Click Multiplier (100 clicks)</button>
+    <button id="autoButton" onclick="autoClickUpgrade()">Upgrade Autoclick (50 clicks)</button>
+    <button id="multiButton" onclick="clickMultiUpgrade()">Click Multiplier (75 clicks)</button>
 
             <nav>
             <details>
@@ -33,6 +38,9 @@
                 </ul>
             </details>
         </nav>
+<img src="R.jpg" width="400"  onclick="cookieClick()">
+<img src="R (1).jpg"width="400" onclick="cookieClick()">
+<img src="thewaterboycover-1541088644035-1541088646549.webp">
 
 
 </body>
@@ -40,12 +48,12 @@
     //configuration
     //Autoclick
     var autoclickAmount = 0;
-    var autoclickCostPerLevel = 100;
-    var autoclickCost = 100;
+    var autoclickCostPerLevel = 50;
+    var autoclickCost = 50;
     // clickMulti
     var clickMulti = 1;
-    var clickMultiCostPerLevel = 100;
-    var clickMultiCost = 100;
+    var clickMultiCostPerLevel = 75;
+    var clickMultiCost = 75;
     var score = 0;
     var scoreBox = document.getElementById("score");
     var autoButton = document.getElementById("autoButton");
@@ -117,7 +125,7 @@
         multiButton.innerHTML = "Upgrade Multiclick(" + clickMultiCost + "clicks)";
         scoreBox.innerHTML = score;
     }
-    setInterval(autoClick, 0.3)
+    setInterval(autoClick, 2000)
 
     loadGame();
 
